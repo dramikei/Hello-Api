@@ -1,0 +1,8 @@
+application:
+  - name: Hello-API
+    memory: 256M
+    instance: 1
+    random-route: true
+    disk_quota: 1024M
+    command: hello-api
+    buildpack: swift_buildpack

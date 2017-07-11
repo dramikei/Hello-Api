@@ -1,0 +1,7 @@
+app:
+  image: ibmcom/swift-ubuntu
+  ports:
+    - "8080:8080"
+  volumes:
+    - .:/root/hello-api
+  command: bash -c "cd /root/hello-api && swift build --clean && swift build && ./.build/debug/hello-api"
